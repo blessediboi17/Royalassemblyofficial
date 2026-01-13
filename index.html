@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Assembly Official | Church & Academy</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <span class="brand">ROYAL ASSEMBLY</span>
+            <ul class="nav-links">
+                <li><a href="#events">Events</a></li>
+                <li><a href="#founder">Founder</a></li>
+                <li><a href="#rass">RASS</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <img src="logo.png" alt="Royal Assembly Logo" class="main-logo">
+        <h1>Finding Faith, Together.</h1>
+        <p>Experience the Presence of God</p>
+        <div class="hero-btns">
+            <a href="#visit" class="btn-gold">PLAN YOUR VISIT</a>
+            <a href="#" class="btn-outline">WATCH ONLINE</a>
+        </div>
+    </header>
+
+    <section id="events" class="section feed-bg">
+        <h2 class="gold-text">Upcoming Events</h2>
+        <div class="horizontal-scroll">
+            <div class="event-card">
+                <span class="date">SUN 10:00 AM</span>
+                <h3>Worship Service</h3>
+                <p>Main Sanctuary</p>
+            </div>
+            <div class="event-card">
+                <span class="date">WED 6:00 PM</span>
+                <h3>Bible Study</h3>
+                <p>Virtual & In-Person</p>
+            </div>
+            <div class="event-card">
+                <span class="date">FEB 14</span>
+                <h3>Youth Banquet</h3>
+                <p>RASS Main Hall</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="founder" class="section founder-section">
+        <div class="container">
+            <h2 class="gold-text">Our Leadership</h2>
+            <div class="founder-grid">
+                <div class="founder-image">
+                    <div class="img-placeholder">IMAGE OF FOUNDER</div>
+                </div>
+                <div class="founder-bio">
+                    <h3>General Overseer & Founder</h3>
+                    <p>
+                        With a divine mandate to raise a generation of excellence, our General Overseer has dedicated over 
+                        two decades to the ministry of the Gospel. Known for a profound teaching grace and a heart for 
+                        humanity, the Founder established Royal Assembly with the vision of spiritual and academic liberation.
+                    </p>
+                    <p>
+                        Under their leadership, the ministry has expanded globally, birthing the Royal Academy School System 
+                        (RASS) to ensure that the leaders of tomorrow are anchored in both faith and knowledge.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section darker-bg">
+        <div class="container">
+            <div class="content-box">
+                <h2 class="gold-text">Our Vision</h2>
+                <p>"To be a beacon of light, transforming lives through the power of faith and community."</p>
+            </div>
+            <div class="divider"></div>
+            <div class="content-box">
+                <h2 class="gold-text">Our Mission</h2>
+                <p>We exist to exalt God, equip believers, and evangelize the world through Christ-centered worship and holistic education.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="rass" class="section rass-bg">
+        <div class="badge">RASS</div>
+        <h2 class="gold-text">Royal Academy School System</h2>
+        <p class="bio-text">
+            <strong>RASS</strong> is dedicated to nurturing the next generation of leaders. 
+            By integrating spiritual values with high academic standards, we provide a holistic environment where students thrive in wisdom, stature, and favor.
+        </p>
+        <a href="mailto:admin@rass.edu" class="btn-outline">Inquire About Enrollment</a>
+    </section>
+
+    <footer id="visit">
+        <div class="footer-content">
+            <h3>Visit Us</h3>
+            <p>123 Church Avenue, Your City</p>
+            <form name="visitor-contact" method="POST" data-netlify="true" class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <button type="submit" class="btn-gold">SEND MESSAGE</button>
+            </form>
+            <p class="copyright">&copy; 2026 Royal Assembly Official.</p>
+        </div>
+    </footer>
+
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
+</body>
+      </html>
